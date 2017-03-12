@@ -1,5 +1,26 @@
 {
   "name": "react-native-geofence",
   "version": "0.0.1",
-  "keywords": "react-native"
+  "description": "A React Native Geofence library for Android and iOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kn4rfy/react-native-geofence.git"
+  },
+  "keywords": [
+    "geofence",
+    "react-native",
+    "react-component",
+    "android",
+    "ios"
+  ],
+  "author": "FRANCIS KNARFY ELOPRE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kn4rfy/react-native-geofence/issues"
+  },
+  "homepage": "https://github.com/kn4rfy/react-native-geofence#readme"
 }
