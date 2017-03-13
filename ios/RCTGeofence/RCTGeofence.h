@@ -8,12 +8,11 @@
 
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
-#import "GeofenceDelegate.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface RCTGeofence : RCTEventEmitter <RCTBridgeModule>
-
-@property (nonatomic, strong) GeofenceDelegate* geofenceDelegate;
-
--(void)jsEventSender:(NSString *)name body:(id)body;
+@interface RCTGeofence : RCTEventEmitter <RCTBridgeModule, CLLocationManagerDelegate>
+{
+    CLLocationManager* locationManager;
+}
 
 @end
