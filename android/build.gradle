@@ -49,7 +49,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.facebook.react:react-native:+'
+    compileOnly 'com.facebook.react:react-native:+'
     implementation 'com.google.android.gms:play-services-location:16.0.0'
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
