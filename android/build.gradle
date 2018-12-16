@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 def _ext = rootProject.ext
 
@@ -23,6 +24,7 @@ android {
 }
 
 buildscript {
+    ext.kotlin_version = '1.2.71'
     repositories {
         jcenter()
         maven {
@@ -33,10 +35,12 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
 repositories {
+    jcenter()
     mavenCentral()
     maven {
         url 'https://maven.google.com/'
@@ -46,4 +50,7 @@ repositories {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
 }
